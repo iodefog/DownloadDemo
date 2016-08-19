@@ -1,0 +1,16 @@
+PODS:
+  - GCJSONKit (1.5.0)
+  - JBASIHTTPRequest (2.1):
+    - Reachability (~> 3.2)
+  - Reachability (3.2)
+
+DEPENDENCIES:
+  - GCJSONKit
+  - JBASIHTTPRequest
+
+SPEC CHECKSUMS:
+  GCJSONKit: 8ad0067945efd217af8e610fa09ca0d02283b36b
+  JBASIHTTPRequest: bcb52c0c249fe21a236e16c2747d663d3d5d0007
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+
+COCOAPODS: 0.39.0

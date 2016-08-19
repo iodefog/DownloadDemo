@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>GCJSONKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>JBASIHTTPRequest.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Reachability.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5F0C900D021D33C6218E80E5AEAFAF43</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>669DADDCED7D551ACD75F8490C42B09C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7D943DEEAECED2D2CCA5CA3A3BA6B656</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CAC075D5F43244DEF8953762B40BED06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

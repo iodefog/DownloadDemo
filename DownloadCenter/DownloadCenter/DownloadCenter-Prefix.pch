@@ -1,0 +1,67 @@
+//
+// Prefix header for all source files of the 'DownloadCenter' target in the 'DownloadCenter' project
+//
+
+#ifdef __OBJC__
+//system
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+//external
+    #import "ASINetworkQueue.h"
+    #import "MP4Box.h"
+    #import "SHReachability+.h"
+    #import "NSURLAdditions.h"
+//    #import "UIDevice-Hardware.h"
+//    #import "UIApplicationAdditions.h"
+//    #import "DataCenterHeaders.h"
+    #import "NSDictionary+Shortcuts.h"
+    #import "NSArray+Shortcuts.h"
+    #import "NSStringExtend.h"
+//internal
+    #import "SHDownloadConstances+Internal.h"
+    #import "SHDownloadManager_Internal.h"
+    #import "SHDownloadTask_Internal.h"
+
+
+#define LOG_HERE ({\
+    NSString *file = [[NSString stringWithUTF8String:__FILE__] lastPathComponent];\
+    NSString *class = NSStringFromClass([self class]);\
+    NSString *method = [NSString stringWithUTF8String:__func__];\
+    method = [method stringByReplacingOccurrencesOfString:[file substringToIndex:file.length - 2] withString:class];\
+    [NSString stringWithFormat:@"%@@%@:%d", method, file, __LINE__];\
+})
+
+#define LOG_FORMAT_AND_HERE @"%@", LOG_HERE
+
+#if DEBUG
+    #define NSLogHere() {\
+        NSLog(LOG_FORMAT_AND_HERE);\
+    }
+
+#else
+    #define NSLogHere()
+    #define NSLog(...)
+    #define NSLog(...)
+
+#endif
+
+#endif
+
+
+#define UrlBase_yule @"http://m.yule.sohu.com"
+#define OpenAPIUrlBase @"http://api.tv.sohu.com"
+#define URL_Format_VideoInfo_Iphone @"%@/v4/video/info/%@.json?site=%d&%@"
+
+// debug info
+#ifdef DEBUG
+    #define BDebugLog(fmt, ...)   NSLog((@"[DEBUG-WangZY]%s " fmt), __PRETTY_FUNCTION__, ##__VA_ARGS__)
+//    #define BDebugLog(...)
+#else
+    #define BDebugLog(...)
+//#define BDebugLog(fmt, ...)   NSLog((@"[DEBUG-WangZY]%s " fmt), __PRETTY_FUNCTION__, ##__VA_ARGS__)
+
+//assert
+#   define NDEBUG
+#   include <assert.h>
+
+#endif

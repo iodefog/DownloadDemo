@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		544725891545356D00A3180C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544725881545356D00A3180C /* Foundation.framework */; };
+		545A39F9155A630B004D5B30 /* AppStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 545A39F7155A630B004D5B30 /* AppStateManager.m */; };
+		54A9EE73154BFCCE005DE2B5 /* SHDownloadDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A9EE64154BFCCE005DE2B5 /* SHDownloadDataManager.m */; };
+		54A9EE78154BFCCE005DE2B5 /* SHDownloadManager+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A9EE69154BFCCE005DE2B5 /* SHDownloadManager+Helper.m */; };
+		54A9EE7A154BFCCE005DE2B5 /* SHDownloadManager+Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A9EE6B154BFCCE005DE2B5 /* SHDownloadManager+Observer.m */; };
+		80840C1818FE2DFE0006B048 /* SHDownloadConstances.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54A9EE61154BFCCE005DE2B5 /* SHDownloadConstances.h */; };
+		80840C1918FE2DFE0006B048 /* SHDownloadManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54A9EE66154BFCCE005DE2B5 /* SHDownloadManager.h */; };
+		80840C1A18FE2DFE0006B048 /* SHDownloadTask.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54A9EE6D154BFCCE005DE2B5 /* SHDownloadTask.h */; };
+		80840C1B18FE2DFE0006B048 /* SHDownloadManager+Helper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54A9EE68154BFCCE005DE2B5 /* SHDownloadManager+Helper.h */; };
+		80840C1C18FE2DFF0006B048 /* SHDownloadManager+Observer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54A9EE6A154BFCCE005DE2B5 /* SHDownloadManager+Observer.h */; };
+		80840C1D18FE2DFF0006B048 /* SHDownloadDataManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54A9EE63154BFCCE005DE2B5 /* SHDownloadDataManager.h */; };
+		80840C3B18FE36650006B048 /* SHDownloadConstances+Internal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54A9EE62154BFCCE005DE2B5 /* SHDownloadConstances+Internal.h */; };
+		80840C3C18FE36650006B048 /* SHDownloadTask_Internal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54A9EE6C154BFCCE005DE2B5 /* SHDownloadTask_Internal.h */; };
+		80840C3D18FE36650006B048 /* SHDownloadManager_Internal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54A9EE65154BFCCE005DE2B5 /* SHDownloadManager_Internal.h */; };
+		80840C3E18FE36650006B048 /* SHDownloadDataManager_Internal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 545122561553B42F00EAD8DF /* SHDownloadDataManager_Internal.h */; };
+		80840C3F18FE36650006B048 /* AppStateManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 545A39F6155A630B004D5B30 /* AppStateManager.h */; };
+		80840C4018FE36650006B048 /* NSArray+sort.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF0806C217D5DA8300A8D8D7 /* NSArray+sort.h */; };
+		80840C4118FE36650006B048 /* NSArray+sort.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF0806C317D5DA8300A8D8D7 /* NSArray+sort.m */; };
+		80840C4618FE3A940006B048 /* SHDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A9EE6E154BFCCE005DE2B5 /* SHDownloadTask.m */; };
+		80840C4718FE3A940006B048 /* SHDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A9EE67154BFCCE005DE2B5 /* SHDownloadManager.m */; };
+		C759A8B51D66B5850069FCE2 /* MP4Box.m in Sources */ = {isa = PBXBuildFile; fileRef = C759A8B41D66B5850069FCE2 /* MP4Box.m */; };
+		C759A8B91D66B5CC0069FCE2 /* SHReachability+.m in Sources */ = {isa = PBXBuildFile; fileRef = C759A8B81D66B5CC0069FCE2 /* SHReachability+.m */; };
+		C759A8BC1D66B5FD0069FCE2 /* SHReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C759A8BB1D66B5FD0069FCE2 /* SHReachability.m */; };
+		C759A8C01D66B7090069FCE2 /* UIApplicationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C759A8BF1D66B7090069FCE2 /* UIApplicationAdditions.m */; };
+		C759A8C31D66B81B0069FCE2 /* NSURLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C759A8C21D66B81B0069FCE2 /* NSURLAdditions.m */; };
+		C759A8C61D66BD340069FCE2 /* NSDictionary+Shortcuts.m in Sources */ = {isa = PBXBuildFile; fileRef = C759A8C51D66BD340069FCE2 /* NSDictionary+Shortcuts.m */; };
+		C759A8C91D66BD800069FCE2 /* NSArray+Shortcuts.m in Sources */ = {isa = PBXBuildFile; fileRef = C759A8C81D66BD800069FCE2 /* NSArray+Shortcuts.m */; };
+		C759A8CC1D66BE910069FCE2 /* NSStringExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = C759A8CB1D66BE910069FCE2 /* NSStringExtend.m */; };
+		C759A8CD1D66C2140069FCE2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C759A8AF1D66B5310069FCE2 /* libPods.a */; };
+		C759A8D21D66CF000069FCE2 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C759A8D11D66CF000069FCE2 /* NSDataAdditions.m */; };
+		DF0806C517D5DA8300A8D8D7 /* NSArray+sort.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0806C317D5DA8300A8D8D7 /* NSArray+sort.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		80840C1618FE2DF10006B048 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				80840C3B18FE36650006B048 /* SHDownloadConstances+Internal.h in CopyFiles */,
+				80840C3C18FE36650006B048 /* SHDownloadTask_Internal.h in CopyFiles */,
+				80840C3D18FE36650006B048 /* SHDownloadManager_Internal.h in CopyFiles */,
+				80840C3E18FE36650006B048 /* SHDownloadDataManager_Internal.h in CopyFiles */,
+				80840C3F18FE36650006B048 /* AppStateManager.h in CopyFiles */,
+				80840C4018FE36650006B048 /* NSArray+sort.h in CopyFiles */,
+				80840C4118FE36650006B048 /* NSArray+sort.m in CopyFiles */,
+				80840C1818FE2DFE0006B048 /* SHDownloadConstances.h in CopyFiles */,
+				80840C1918FE2DFE0006B048 /* SHDownloadManager.h in CopyFiles */,
+				80840C1A18FE2DFE0006B048 /* SHDownloadTask.h in CopyFiles */,
+				80840C1B18FE2DFE0006B048 /* SHDownloadManager+Helper.h in CopyFiles */,
+				80840C1C18FE2DFF0006B048 /* SHDownloadManager+Observer.h in CopyFiles */,
+				80840C1D18FE2DFF0006B048 /* SHDownloadDataManager.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		540F7B39155BB1D600399215 /* mute.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mute.mp3; sourceTree = "<group>"; };
+		544725851545356D00A3180C /* libDownloadCenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDownloadCenter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		544725881545356D00A3180C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5447258C1545356D00A3180C /* DownloadCenter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DownloadCenter-Prefix.pch"; sourceTree = "<group>"; };
+		545122561553B42F00EAD8DF /* SHDownloadDataManager_Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHDownloadDataManager_Internal.h; sourceTree = "<group>"; };
+		545A39F6155A630B004D5B30 /* AppStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStateManager.h; sourceTree = "<group>"; };
+		545A39F7155A630B004D5B30 /* AppStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStateManager.m; sourceTree = "<group>"; };
+		545A3A4A155A8671004D5B30 /* mute.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mute.caf; sourceTree = "<group>"; };
+		54A9EE61154BFCCE005DE2B5 /* SHDownloadConstances.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDownloadConstances.h; sourceTree = "<group>"; };
+		54A9EE62154BFCCE005DE2B5 /* SHDownloadConstances+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SHDownloadConstances+Internal.h"; sourceTree = "<group>"; };
+		54A9EE63154BFCCE005DE2B5 /* SHDownloadDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDownloadDataManager.h; sourceTree = "<group>"; };
+		54A9EE64154BFCCE005DE2B5 /* SHDownloadDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDownloadDataManager.m; sourceTree = "<group>"; };
+		54A9EE65154BFCCE005DE2B5 /* SHDownloadManager_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDownloadManager_Internal.h; sourceTree = "<group>"; };
+		54A9EE66154BFCCE005DE2B5 /* SHDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDownloadManager.h; sourceTree = "<group>"; };
+		54A9EE67154BFCCE005DE2B5 /* SHDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDownloadManager.m; sourceTree = "<group>"; };
+		54A9EE68154BFCCE005DE2B5 /* SHDownloadManager+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SHDownloadManager+Helper.h"; sourceTree = "<group>"; };
+		54A9EE69154BFCCE005DE2B5 /* SHDownloadManager+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SHDownloadManager+Helper.m"; sourceTree = "<group>"; };
+		54A9EE6A154BFCCE005DE2B5 /* SHDownloadManager+Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SHDownloadManager+Observer.h"; sourceTree = "<group>"; };
+		54A9EE6B154BFCCE005DE2B5 /* SHDownloadManager+Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SHDownloadManager+Observer.m"; sourceTree = "<group>"; };
+		54A9EE6C154BFCCE005DE2B5 /* SHDownloadTask_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDownloadTask_Internal.h; sourceTree = "<group>"; };
+		54A9EE6D154BFCCE005DE2B5 /* SHDownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDownloadTask.h; sourceTree = "<group>"; };
+		54A9EE6E154BFCCE005DE2B5 /* SHDownloadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDownloadTask.m; sourceTree = "<group>"; };
+		C759A8AF1D66B5310069FCE2 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../../../../../Library/Developer/Xcode/DerivedData/DownloadDemo-glouygroghykfggqgxiziguaofpy/Build/Products/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		C759A8B31D66B5850069FCE2 /* MP4Box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MP4Box.h; sourceTree = "<group>"; };
+		C759A8B41D66B5850069FCE2 /* MP4Box.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MP4Box.m; sourceTree = "<group>"; };
+		C759A8B71D66B5CC0069FCE2 /* SHReachability+.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SHReachability+.h"; sourceTree = "<group>"; };
+		C759A8B81D66B5CC0069FCE2 /* SHReachability+.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SHReachability+.m"; sourceTree = "<group>"; };
+		C759A8BA1D66B5FD0069FCE2 /* SHReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHReachability.h; sourceTree = "<group>"; };
+		C759A8BB1D66B5FD0069FCE2 /* SHReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHReachability.m; sourceTree = "<group>"; };
+		C759A8BE1D66B7090069FCE2 /* UIApplicationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIApplicationAdditions.h; sourceTree = "<group>"; };
+		C759A8BF1D66B7090069FCE2 /* UIApplicationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIApplicationAdditions.m; sourceTree = "<group>"; };
+		C759A8C11D66B81B0069FCE2 /* NSURLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLAdditions.h; sourceTree = "<group>"; };
+		C759A8C21D66B81B0069FCE2 /* NSURLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLAdditions.m; sourceTree = "<group>"; };
+		C759A8C41D66BD340069FCE2 /* NSDictionary+Shortcuts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Shortcuts.h"; sourceTree = "<group>"; };
+		C759A8C51D66BD340069FCE2 /* NSDictionary+Shortcuts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Shortcuts.m"; sourceTree = "<group>"; };
+		C759A8C71D66BD800069FCE2 /* NSArray+Shortcuts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Shortcuts.h"; sourceTree = "<group>"; };
+		C759A8C81D66BD800069FCE2 /* NSArray+Shortcuts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Shortcuts.m"; sourceTree = "<group>"; };
+		C759A8CA1D66BE910069FCE2 /* NSStringExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringExtend.h; sourceTree = "<group>"; };
+		C759A8CB1D66BE910069FCE2 /* NSStringExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringExtend.m; sourceTree = "<group>"; };
+		C759A8CE1D66CE510069FCE2 /* libGCJSONKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGCJSONKit.a; path = "../../../../../Library/Developer/Xcode/DerivedData/DownloadDemo-glouygroghykfggqgxiziguaofpy/Build/Products/Debug-iphoneos/libGCJSONKit.a"; sourceTree = "<group>"; };
+		C759A8D01D66CF000069FCE2 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		C759A8D11D66CF000069FCE2 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		DF0806C217D5DA8300A8D8D7 /* NSArray+sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+sort.h"; sourceTree = "<group>"; };
+		DF0806C317D5DA8300A8D8D7 /* NSArray+sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+sort.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		544725821545356D00A3180C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C759A8CD1D66C2140069FCE2 /* libPods.a in Frameworks */,
+				544725891545356D00A3180C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5447257A1545356C00A3180C = {
+			isa = PBXGroup;
+			children = (
+				5447258A1545356D00A3180C /* DownloadCenter */,
+				544725871545356D00A3180C /* Frameworks */,
+				544725861545356D00A3180C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		544725861545356D00A3180C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				544725851545356D00A3180C /* libDownloadCenter.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		544725871545356D00A3180C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C759A8CE1D66CE510069FCE2 /* libGCJSONKit.a */,
+				C759A8AF1D66B5310069FCE2 /* libPods.a */,
+				544725881545356D00A3180C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5447258A1545356D00A3180C /* DownloadCenter */ = {
+			isa = PBXGroup;
+			children = (
+				C759A8B11D66B5750069FCE2 /* Helper */,
+				54A9EF1A15526C8C005DE2B5 /* include */,
+				54A9EF1C15526CA9005DE2B5 /* source */,
+				5447258B1545356D00A3180C /* Supporting Files */,
+			);
+			path = DownloadCenter;
+			sourceTree = "<group>";
+		};
+		5447258B1545356D00A3180C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				545A3A4A155A8671004D5B30 /* mute.caf */,
+				540F7B39155BB1D600399215 /* mute.mp3 */,
+				5447258C1545356D00A3180C /* DownloadCenter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54A9EF1A15526C8C005DE2B5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				54A9EF1D15526CBB005DE2B5 /* public */,
+				54A9EF1E15526CC7005DE2B5 /* private */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		54A9EF1C15526CA9005DE2B5 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				54A9EE6E154BFCCE005DE2B5 /* SHDownloadTask.m */,
+				54A9EE67154BFCCE005DE2B5 /* SHDownloadManager.m */,
+				54A9EE69154BFCCE005DE2B5 /* SHDownloadManager+Helper.m */,
+				54A9EE6B154BFCCE005DE2B5 /* SHDownloadManager+Observer.m */,
+				54A9EE64154BFCCE005DE2B5 /* SHDownloadDataManager.m */,
+				545A39F7155A630B004D5B30 /* AppStateManager.m */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		54A9EF1D15526CBB005DE2B5 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				54A9EE61154BFCCE005DE2B5 /* SHDownloadConstances.h */,
+				54A9EE66154BFCCE005DE2B5 /* SHDownloadManager.h */,
+				54A9EE6D154BFCCE005DE2B5 /* SHDownloadTask.h */,
+				54A9EE68154BFCCE005DE2B5 /* SHDownloadManager+Helper.h */,
+				54A9EE6A154BFCCE005DE2B5 /* SHDownloadManager+Observer.h */,
+				54A9EE63154BFCCE005DE2B5 /* SHDownloadDataManager.h */,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
+		54A9EF1E15526CC7005DE2B5 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				54A9EE62154BFCCE005DE2B5 /* SHDownloadConstances+Internal.h */,
+				54A9EE6C154BFCCE005DE2B5 /* SHDownloadTask_Internal.h */,
+				54A9EE65154BFCCE005DE2B5 /* SHDownloadManager_Internal.h */,
+				545122561553B42F00EAD8DF /* SHDownloadDataManager_Internal.h */,
+				545A39F6155A630B004D5B30 /* AppStateManager.h */,
+				DF0806C217D5DA8300A8D8D7 /* NSArray+sort.h */,
+				DF0806C317D5DA8300A8D8D7 /* NSArray+sort.m */,
+			);
+			name = private;
+			sourceTree = "<group>";
+		};
+		C759A8B11D66B5750069FCE2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C759A8BD1D66B7090069FCE2 /* Additions */,
+				C759A8B61D66B5CC0069FCE2 /* SHReachability+ */,
+				C759A8B21D66B5850069FCE2 /* MP4Box */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C759A8B21D66B5850069FCE2 /* MP4Box */ = {
+			isa = PBXGroup;
+			children = (
+				C759A8B31D66B5850069FCE2 /* MP4Box.h */,
+				C759A8B41D66B5850069FCE2 /* MP4Box.m */,
+			);
+			path = MP4Box;
+			sourceTree = "<group>";
+		};
+		C759A8B61D66B5CC0069FCE2 /* SHReachability+ */ = {
+			isa = PBXGroup;
+			children = (
+				C759A8BA1D66B5FD0069FCE2 /* SHReachability.h */,
+				C759A8BB1D66B5FD0069FCE2 /* SHReachability.m */,
+				C759A8B71D66B5CC0069FCE2 /* SHReachability+.h */,
+				C759A8B81D66B5CC0069FCE2 /* SHReachability+.m */,
+			);
+			path = "SHReachability+";
+			sourceTree = "<group>";
+		};
+		C759A8BD1D66B7090069FCE2 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				C759A8BE1D66B7090069FCE2 /* UIApplicationAdditions.h */,
+				C759A8BF1D66B7090069FCE2 /* UIApplicationAdditions.m */,
+				C759A8C11D66B81B0069FCE2 /* NSURLAdditions.h */,
+				C759A8C21D66B81B0069FCE2 /* NSURLAdditions.m */,
+				C759A8C41D66BD340069FCE2 /* NSDictionary+Shortcuts.h */,
+				C759A8C51D66BD340069FCE2 /* NSDictionary+Shortcuts.m */,
+				C759A8C71D66BD800069FCE2 /* NSArray+Shortcuts.h */,
+				C759A8C81D66BD800069FCE2 /* NSArray+Shortcuts.m */,
+				C759A8CA1D66BE910069FCE2 /* NSStringExtend.h */,
+				C759A8CB1D66BE910069FCE2 /* NSStringExtend.m */,
+				C759A8D01D66CF000069FCE2 /* NSDataAdditions.h */,
+				C759A8D11D66CF000069FCE2 /* NSDataAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		544725841545356D00A3180C /* DownloadCenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 544725921545356D00A3180C /* Build configuration list for PBXNativeTarget "DownloadCenter" */;
+			buildPhases = (
+				544725811545356D00A3180C /* Sources */,
+				544725821545356D00A3180C /* Frameworks */,
+				DFAA8AD917D4A2EC00F6A25A /* Run Script - TODO */,
+				80840C1618FE2DF10006B048 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DownloadCenter;
+			productName = DownloadCenter;
+			productReference = 544725851545356D00A3180C /* libDownloadCenter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5447257C1545356C00A3180C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = SOHU;
+			};
+			buildConfigurationList = 5447257F1545356C00A3180C /* Build configuration list for PBXProject "DownloadCenter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5447257A1545356C00A3180C;
+			productRefGroup = 544725861545356D00A3180C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				544725841545356D00A3180C /* DownloadCenter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DFAA8AD917D4A2EC00F6A25A /* Run Script - TODO */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - TODO";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# http://rocry.com/2012/12/17/xcode-tips/\n# NO '|\\!\\!\\!:'\nKEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:\"\nfind ${SRCROOT} \\( -name \"*.h\" -or -name \"*.m\" \\) -print0 | \\\n    xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | \\\n    perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		544725811545356D00A3180C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80840C4618FE3A940006B048 /* SHDownloadTask.m in Sources */,
+				80840C4718FE3A940006B048 /* SHDownloadManager.m in Sources */,
+				54A9EE73154BFCCE005DE2B5 /* SHDownloadDataManager.m in Sources */,
+				C759A8C01D66B7090069FCE2 /* UIApplicationAdditions.m in Sources */,
+				54A9EE78154BFCCE005DE2B5 /* SHDownloadManager+Helper.m in Sources */,
+				54A9EE7A154BFCCE005DE2B5 /* SHDownloadManager+Observer.m in Sources */,
+				C759A8D21D66CF000069FCE2 /* NSDataAdditions.m in Sources */,
+				C759A8C31D66B81B0069FCE2 /* NSURLAdditions.m in Sources */,
+				C759A8B51D66B5850069FCE2 /* MP4Box.m in Sources */,
+				C759A8CC1D66BE910069FCE2 /* NSStringExtend.m in Sources */,
+				C759A8C91D66BD800069FCE2 /* NSArray+Shortcuts.m in Sources */,
+				C759A8C61D66BD340069FCE2 /* NSDictionary+Shortcuts.m in Sources */,
+				545A39F9155A630B004D5B30 /* AppStateManager.m in Sources */,
+				C759A8BC1D66B5FD0069FCE2 /* SHReachability.m in Sources */,
+				DF0806C517D5DA8300A8D8D7 /* NSArray+sort.m in Sources */,
+				C759A8B91D66B5CC0069FCE2 /* SHReachability+.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		544725901545356D00A3180C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		544725911545356D00A3180C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		544725931545356D00A3180C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DownloadCenter.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DownloadCenter/DownloadCenter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"COCOAPODS=1",
+					"$(inherited)",
+				);
+				GCC_THUMB_SUPPORT = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/include/libxml2\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/ASIHTTPRequest\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Public/GCJSONKit/JSONKit\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/GCJSONKit\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/JBASIHTTPRequest\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"GCJSONKit\"",
+					"-l\"JBASIHTTPRequest\"",
+					"-l\"Reachability\"",
+					"-l\"z.1\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PODS_ROOT = "${SRCROOT}/../Pods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		544725941545356D00A3180C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DownloadCenter.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DownloadCenter/DownloadCenter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "COCOAPODS=1";
+				GCC_THUMB_SUPPORT = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/include/libxml2\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/ASIHTTPRequest\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Public/GCJSONKit/JSONKit\"",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/GCJSONKit\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/JBASIHTTPRequest\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"GCJSONKit\"",
+					"-l\"JBASIHTTPRequest\"",
+					"-l\"Reachability\"",
+					"-l\"z.1\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PODS_ROOT = "${SRCROOT}/../Pods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5447257F1545356C00A3180C /* Build configuration list for PBXProject "DownloadCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544725901545356D00A3180C /* Debug */,
+				544725911545356D00A3180C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		544725921545356D00A3180C /* Build configuration list for PBXNativeTarget "DownloadCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544725931545356D00A3180C /* Debug */,
+				544725941545356D00A3180C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5447257C1545356C00A3180C /* Project object */;
+}
